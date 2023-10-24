@@ -1,41 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Interactive Definitions</title>
-    <style>
-        .definition {
-            display: none;
-            margin-left: 20px;
-        }
-
-        .word-label {
-            cursor: pointer;
-        }
-
-        .word-label:hover {
-            text-decoration: underline;
-        }
-
-        .word-input:checked ~ .definition {
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <input type="radio" class="word-input" id="word1">
-    <label class="word-label" for="word1">Word 1</label>
-    <div class="definition">Definition of Word 1
-        <input type="radio" class="word-input" id="subword1">
-        <label class="word-label" for="subword1">Subword 1</label>
-        <div class="definition">Definition of Subword 1</div>
-        <input type="radio" class="word-input" id="subword2">
-        <label class="word-label" for="subword2">Subword 2</label>
-        <div class="definition">Definition of Subword 2</div>
-    </div>
-
-    <input type="radio" class="word-input" id="word2">
-    <label class="word-label" for="word2">Word 2</label>
-    <div class="definition">Definition of Word 2</div>
+	<head>
+<style>
+details > summary {
+	display: inline;
+}
+</style>
+	</head>
+	<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan dapibus nunc, et euismod nunc.
+   <details>
+      <summary>Click to reveal more</summary>
+      <p>Additional information that is hidden by default. You can click to reveal it.</p>
+   </details>
+</p>
 </body>
 </html>
-
