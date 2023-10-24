@@ -2,6 +2,16 @@
 <html>
 	<head>
 		<title>quasiquoth</title>
+    <style>
+        .definition {
+            display: none;
+            margin-left: 20px;
+        }
+
+        .word:hover .definition {
+            display: block;
+        }
+    </style>
 	</head>
 	<body>
 		<header>
@@ -15,5 +25,19 @@
 				<li><a href="other.html">Other</a></li>
 			</ul>
 		</nav>
+
+		    <p><span class="word">Word 1</span>
+        <div class="definition">Definition of Word 1
+            <p><span class="word">Subword 1</span>
+                <div class="definition">Definition of Subword 1</div>
+            </p>
+            <p><span class="word">Subword 2</span>
+                <div class="definition">Definition of Subword 2</div>
+            </p>
+        </div>
+    </p>
+    <p><span class="word">Word 2</span>
+        <div class="definition">Definition of Word 2</div>
+    </p>
 	</body>
 </html>
